@@ -1,0 +1,248 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/a43711df-c428-4f88-8bb3-b2ac5f20608f/32935458-d049-44c2-b94b-32f16d60ded1/IN-en-20230227-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px, 8%;
+    position: relative;
+}
+
+img {
+    width: 150px;
+    height: 50px;
+    padding-left: 100px;
+    background: transparent;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px, 0;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db000d;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding-right: 30px;
+}
+
+.lang {
+    border: solid white;
+    background: transparent;
+}
+
+.head-container {
+    text-align: center;
+
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+}
+
+.head-container h1 {
+    font-size: 82px;
+    font-weight: 100;
+    max-width: 150;
+    line-height: 60px;
+    margin-top: 10px;
+    
+
+}
+.head-container h3{
+    
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+.bot{
+    margin-bottom: 30px;
+}
+.email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    max-resolution: 30px;
+    overflow: hidden;
+}
+.email-signup button{
+    background:#db0001 ;
+    border: 0;
+    outline: 0;
+    color:#fff ;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.features{
+    padding:50px 20%;
+    font-size:22px;
+    border-top: 7px rgb(91, 91, 91) solid;
+    border-bottom: 7px rgb(91, 91, 91) solid;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px,0;
+    
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom:20px ;
+    border-radius: 4px green solid;
+}
+.img-col img{
+    display: block;
+    width:450px;
+    height: 350px;
+    margin: auto;
+}
+.featuresh2{
+  font-size: 50px; 
+  font-weight: 600px; 
+  margin-bottom: 20px;
+}
+/*----------------faq----------------------*/
+.faq{
+    padding: 10px;
+    text-align:center;
+    font-size: 18px;
+
+
+}
+.faq h2{
+    font-weight: 500px;
+    font-size: 40px;
+
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+    
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition:transform 0.05s; 
+}
+input[type="radio"]{
+    display: none;
+}
+
+
+.accordion input[type="radio"]:checked + label+::after{
+    transform: rotate(135deg);
+}
+.accordion .content{
+background-color: #303030;
+text-align: left;
+padding: 0 20px;
+max-height: 0;
+overflow: hidden;
+transition: max-heigth 0.5s,padding 0.5s;
+}
+.accordion input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked+label+after{
+ transform: rotate(135deg);
+}
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 30px;
+
+}
+/*-----------footer--------*/
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color:#777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis:25%;
+    flex-grow:1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    margin-bottom: 10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .lang{
+   color: white;
+   padding: 10px 20px;
+    border-radius: 3px;
+}
+.copyright-text{
+    font: size 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
